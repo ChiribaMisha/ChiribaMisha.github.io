@@ -1,0 +1,15 @@
+.chess{
+    width: 640px;
+    height: 640px;
+    border: 1px solid black;
+    margin: 50px;
+}
+.main {
+    height: 80px;
+    background: linear-gradient(to right, white 12.5%, black 12.5%, black 25%, white 25%, white 37.5%, black 37.5%, black 50%, white 50%, white 62.5%, black 62.5%, black 75%, white 75%, white 87.5%, black 87.5%, black);
+}
+.main2 {
+    height: 80px;
+    background: linear-gradient(to right, black 12.5%, white 12.5%, white 25%, black 25%, black 37.5%, white 37.5%, white 50%, black 50%, black 62.5%, white 62.5%, white 75%, black 75%, black 87.5%, white 87.5%, white);
+}
+}
