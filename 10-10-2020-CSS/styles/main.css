@@ -6,7 +6,7 @@
 }
 .main {
     height: 80px;
-    background: linear-gradient(to right, white 12.5%, black 12.5%, black 25%, white 25%, white 37.5%, black 37.5%, black 50%, white 50%, white 62.5%, black 62.5%, black 75%, white 75%, white 87.5%, black 87.5%, black);
+    background: linear-gradient(to right, white 0% 12.5%, black 12.5% 25%);
 }
 .main2 {
     height: 80px;
