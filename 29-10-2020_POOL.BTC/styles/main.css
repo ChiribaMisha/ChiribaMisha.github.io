@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "ProximaNovaRegular"; 
+    src: url("../fonts/ProximaNova-Regular.woff"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "ProximaNovaBold"; 
+    src: url("../fonts/ProximaNova-Bold.woff"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "ProximaNovaExtraBold"; 
+    src: url("../fonts/ProximaNova-Extrabld.woff"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "GothamProBold"; 
+    src: url("../fonts/GothamPro-Bold.woff"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "GoogleSansRegular"; 
+    src: url("../fonts/GoogleSans-Regular.woff"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "GoogleSansMedium"; 
+    src: url("../fonts/GoogleSans-Medium.woff"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "GoogleSansBold"; 
+    src: url("../fonts/GoogleSans-Bold.woff"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+body {
+    font-family: "Proxima Nova", sans-serif;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1171px;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+
+header {
+    background: linear-gradient(87.5deg, #32228A -76.28%, #745ACD 136.32%); 
+}   
+
+.header__top  {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    color: white;
+    padding-top: 0.6rem; 
+    border-bottom: 2px solid white;
+    padding-bottom: 0.6rem;
+}
+
+.header__top > div {
+    display: flex;
+}
+
+.date__time {
+    display: flex;
+}
+
+.date {
+    margin-right: 1.1rem;
+    padding-top: 0.1rem;
+}
+
+.time {
+    font-weight: bold;
+    font-size: 0.88rem;
+    margin-right: 3.4rem;
+}
+
+.currencies, .currencies > div{
+    display: flex;
+}
+
+.bicoin__currencies {
+    display: flex;
+}
+
+.bitcoin {
+    font-weight: bold;
+    margin-right: 1.3rem
+}
+
+.currency {
+    font-weight: bold;
+    margin-right: 1.15rem;
+}
+
+.value {
+    font-weight: normal;
+    margin-left: 0.3rem;
+}
+
+.languages {
+    display: flex;
+}
+
+.en, .zh, .ru {
+    padding: 0 0.43rem;
+    border-left: 2px solid white;
+}
+
+.ru {
+    border: none;
+}
+
+.header__main__menu {
+    padding-top: 1.5rem;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    margin-right: 5rem;
+}
+
+.logo__text {
+    margin-left: 0.7rem;
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 0.4rem;
+    font-weight: bold;
+}
+
+.button__btc {
+    
+    border-radius: 5px;
+    border: 2px solid white;
+    width: 105px;
+    height: 35px;
+    margin-top: 0.2rem;
+    color: white;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    margin-right: 3.5rem;
+}
+
+.btc__img {
+    padding-right: 0.5rem;
+}
+
+.arrow__btc {
+    padding-bottom: 0.2rem;
+    padding-left: 0.1rem;
+}
+
+.header__menu {
+    margin-right: 0.6rem;
+}
+
+.header__menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding-right: 2.1rem;
+    line-height: 2.5rem;
+}
+
+.header__login {
+    width: 157px;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+    color: #2A1C75;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-top: 0.1rem;
+}
+
+.arrow__login {
+    padding-bottom: 0.2rem;
+    padding-left: 0.8rem;
+}
+
+.header__main {
+    display: flex;
+}
+
+.text__header {
+    color: white;
+    padding-top: 9.2rem;
+}
+
+.text__first__sigmapool {
+    font-size: 1.7rem;
+    width: 550px;
+    font-weight: bold;
+    line-height: 2.29rem;
+    letter-spacing: 0.09rem;
+}
+
+.text__second__sigmapool {
+    font-size: 0.9em;
+    padding-top: 1.3rem;
+    line-height: 1.5rem;
+    width: 638px;
+    font-weight: bold;
+}
+
+.button__registration {
+    background-color: white;
+    width: 223px;
+    height: 42px;
+    border-radius: 20px;
+    color: #2A1C75;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding-top: 0.8rem;
+    margin-top: 1.8rem;
+    margin-bottom: 15rem;
+}
+
+.notebook {
+    position: relative;
+}
+
+.notebook img {
+    position: absolute;
+    top: 62px;
+    left: -42px;
+}
+
+main {
+    background-color: white;
+    height: 1000px;
+}
+
+.cryptocurrency {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8.5rem;
+}
+
+.cryptocurrency > div {
+    width: 346px;
+    height: 436px;
+    box-shadow: 0px 0px 35px #D5D5E3;
+    border-radius: 5px;
+    padding: 1.5rem 2.3rem;
+}

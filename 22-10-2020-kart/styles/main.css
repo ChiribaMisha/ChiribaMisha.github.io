@@ -39,4 +39,5 @@ img {
     display: block;
     top: 0px;
     z-index: 100;
+    border: none;
 }
