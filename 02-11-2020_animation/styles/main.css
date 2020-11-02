@@ -1,0 +1,14 @@
+.main img {
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    transition: outline 2s ease 0s,
+                border-radius 2s ease 4s,
+                transform 6s ease 6s;
+}
+img:hover {
+    outline: 6px solid black;
+    outline-offset: -10px;
+    border-radius: 10%;
+    transform: rotate(180deg);
+}
