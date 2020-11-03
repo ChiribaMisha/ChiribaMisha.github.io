@@ -1,0 +1,91 @@
+.first {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+button {
+    position: absolute;
+    width: 185px;
+    height: 50px;
+    background-color:orange;
+    top: 100px;
+    border-radius: 10px;
+    left: 50px;
+}
+
+button::before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 100%;
+    width: 3em;
+    left: -4.5em;
+    display: block;
+    position: absolute;
+    top: 0;
+    transform: skewX(-45deg) translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover::before {
+    transform: skew(-45deg) translate(17.5em);
+    transition: all 0.5s ease-in-out; 
+}
+
+
+
+
+.second {
+    position: relative;
+    display: flex;
+    margin-left: 100px;
+}
+
+.article {
+    width: 35px;
+    height: 310px;
+    font-size: 10px;
+    border: 5px solid black;
+    border-right: none;
+}
+
+.article:hover {
+    width: 200px;
+}
+
+.article:hover .filling {
+    display: block;
+    margin-left: 40px;
+}
+
+.article h1 {
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+
+.article6 {
+    border-right:5px solid black; ;
+}
+
+.filling {
+    display: none;
+    width: 70%;
+    word-wrap: wrap;
+    height: 100%;
+}
+
+.filling h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.filling p {
+    font-size: 16px;
+}
