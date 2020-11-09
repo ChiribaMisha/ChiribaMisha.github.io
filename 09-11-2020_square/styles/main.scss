@@ -1,0 +1,12 @@
+$square_side_size: 100px 100px;
+
+.main {
+    margin: 0 auto;
+    height: 100vh;
+    background-image:
+    linear-gradient(#fff 10%, transparent 10%),
+    linear-gradient(90deg, #fff 10%, transparent 10%);
+    background-size: $square_side_size;
+    background-color: gray; 
+
+}

@@ -1,0 +1,9 @@
+.main {
+  margin: 0 auto;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #fff), color-stop(10%, transparent)), -webkit-gradient(linear, left top, right top, color-stop(10%, #fff), color-stop(10%, transparent));
+  background-image: linear-gradient(#fff 10%, transparent 10%), linear-gradient(90deg, #fff 10%, transparent 10%);
+  background-size: 100px 100px;
+  background-color: gray;
+}
+/*# sourceMappingURL=main.css.map */
