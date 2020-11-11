@@ -1,0 +1,123 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+        flex-grow: 1;
+        height: 90px;
+        min-width: 320px;
+    }
+}
+
+.logo {
+    text-align: center;
+}
+
+.about__scss {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.main__top {
+    display: grid;
+    height: 400px;
+    grid-template-columns: 13% 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas:
+            "as sc sc"
+            "as fl fl";
+}
+
+aside {
+    grid-area: as;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .aside__left > div, .aside__right > div {
+        font-size: 0.65em;
+        text-align: center;
+        margin-bottom: 10px;
+        width: 5vw;
+        height: 200px;
+    }
+
+    .aside__left > div {
+        margin-bottom: 10px;
+    }
+    
+    .aside__right {
+        margin-top: 60px;
+        margin-left: 1vw;
+    }
+}
+
+section {
+    grid-area: sc;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    div {
+        width: 50%;
+        height: 80px;
+    }
+
+    .left, .right {
+        display: flex;
+        font-size: 1.2rem;
+        img {
+            border-radius: 50%;
+            align-self: center;
+        }
+    }
+
+    .right {
+        align-self: flex-end;
+        margin-top: 10px;
+    }
+}
+
+.flowers {
+    grid-area: fl;
+
+    img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.scroll__lorem {
+    width: 100%;
+    height: 20px;
+}
+
+.main__bottom_lorem {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+        flex-grow: 1;
+        width: 500px;
+        min-width: 420px;
+    }
+
+}
+
+footer {
+    height: 22.5vh;
+    background-image: url(../images/hills.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

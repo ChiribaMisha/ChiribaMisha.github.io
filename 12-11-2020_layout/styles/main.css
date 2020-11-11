@@ -1,0 +1,165 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header > div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 90px;
+  min-width: 320px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.about__scss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__scss a {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.main__top {
+  display: -ms-grid;
+  display: grid;
+  height: 400px;
+  -ms-grid-columns: 13% 1fr;
+      grid-template-columns: 13% 1fr;
+  -ms-grid-rows: 2fr 1fr;
+      grid-template-rows: 2fr 1fr;
+      grid-template-areas: "as sc sc" "as fl fl";
+}
+
+aside {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: as;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+aside .aside__left > div, aside .aside__right > div {
+  font-size: 0.65em;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 5vw;
+  height: 200px;
+}
+
+aside .aside__left > div {
+  margin-bottom: 10px;
+}
+
+aside .aside__right {
+  margin-top: 60px;
+  margin-left: 1vw;
+}
+
+section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: sc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section div {
+  width: 50%;
+  height: 80px;
+}
+
+section .left, section .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+section .left img, section .right img {
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section .right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 10px;
+}
+
+.flowers {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: fl;
+}
+
+.flowers img {
+  width: 100%;
+  height: 200px;
+}
+
+.scroll__lorem {
+  width: 100%;
+  height: 20px;
+}
+
+.main__bottom_lorem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main__bottom_lorem > div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 500px;
+  min-width: 420px;
+}
+
+footer {
+  height: 22.5vh;
+  background-image: url(../images/hills.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/*# sourceMappingURL=main.css.map */
