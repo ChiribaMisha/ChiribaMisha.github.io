@@ -1,123 +1,215 @@
-p {
-    margin: 0;
-    padding: 0;
+// * {
+//     border: 1px solid black;
+// }
+
+main {
+    height: 99vh;
+    display: grid;
+    grid-template-rows: 50fr 150fr 100fr 50px;
 }
 
 header {
     display: flex;
     flex-wrap: wrap;
+    
     & > div {
         flex-grow: 1;
         height: 90px;
         min-width: 320px;
     }
-}
 
-.logo {
-    text-align: center;
-}
-
-.about__scss {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    a {
-        font-weight: bold;
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: black;
-    }
-}
-
-.main__top {
-    display: grid;
-    height: 400px;
-    grid-template-columns: 13% 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas:
-            "as sc sc"
-            "as fl fl";
-}
-
-aside {
-    grid-area: as;
-    overflow-y: scroll;
-    display: flex;
-    flex-wrap: wrap;
-    
-    .aside__left > div, .aside__right > div {
-        font-size: 0.65em;
+    .logo {
         text-align: center;
-        margin-bottom: 10px;
-        width: 5vw;
-        height: 200px;
     }
 
-    .aside__left > div {
-        margin-bottom: 10px;
-    }
+    .about__scss {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     
-    .aside__right {
-        margin-top: 60px;
-        margin-left: 1vw;
+        a {
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: black;
+        }
     }
 }
 
-section {
-    grid-area: sc;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.grids__flowers {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    overflow-y: scroll;
+    .grids {
+        display: grid;
+        overflow-y: scroll;
+        grid-template-rows: repeat(6, 100px);
+        grid-template-columns: 1fr 1fr;
+        gap: 1vw;
+        grid-template-areas: 
+                "i3 ."
+                "i3 i4"
+                "i5 i4"
+                "i5 i6"
+                "i7 i6"
+                "i7 .";
 
-    div {
-        width: 50%;
-        height: 80px;
+            div {
+                display: block;
+                width: 14vw;
+                height: 200px;
+                font-size: 1vw;
+                text-align: center;
+
+                span {
+                    display: block;
+                    font-weight: bold;
+                }
+            }
+
+            .item3 {
+                grid-area: i3;
+            }
+            .item4 {
+                grid-area: i4;
+            }
+            .item5 {
+                grid-area: i5;
+            }
+            .item6 {
+                grid-area: i6;
+            }
+            .item7 {
+                grid-area: i7;
+            }
     }
 
-    .left, .right {
+    .flowers {
+        position: relative;
         display: flex;
-        font-size: 1.2rem;
-        img {
-            border-radius: 50%;
-            align-self: center;
+        flex-direction: column;
+        div {
+            display: flex;
+            width: 50vw;
+            font-size: 1vw;
+            img{
+                align-self: center;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .flowers2{
+            align-self: flex-end;
+            margin-top: 1vh;
+        }
+
+        .flowers__img{
+            position: absolute;
+            width: 100%;
+            height: 170px;
+            bottom: 0;
+        }
+    }
+}
+
+.bottom__lorem {
+    .scroll__lorem {
+        width: 100%;
+        height: 20px;
+    }
+    
+    .main__bottom_lorem {
+        display: flex;
+        flex-wrap: wrap;
+        height: 90%;
+        
+        & > div {
+            flex-grow: 1;
+            width: 20%;
+            min-width: 320px;
+            font-size: 1.5vw;
+        }
+    }
+}
+
+.hills {
+    position: absolute;
+    bottom: 0;
+    height: 53px;
+    width: 100%;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .grids__flowers {
+        .grids {
+            gap: 0.1vw;
+            grid-template-areas: 
+                ". i3"
+                "i4 i3"
+                "i4 i5"
+                "i6 i5"
+                "i6 i7"
+                ". i7";
+
+            div {
+                font-size: 2vw;
+            }
+
+            .item3 {
+                grid-area: i3;
+            }
+            .item4 {
+                grid-area: i4;
+            }
+            .item5 {
+                grid-area: i5;
+            }
+            .item6 {
+                grid-area: i6;
+            }
+            .item7 {
+                grid-area: i7;
+            }
+        }
+
+        .flowers {
+            
+            div {
+                font-size: 2vw;
+            }
+            .flowers__img {
+                height: 100px;
+            }
+
+            .flowers1 {
+                width: 100%;
+            }
+
+            .flowers2 {
+                align-self: flex-start;
+                width: 100%;
+            }
         }
     }
 
-    .right {
-        align-self: flex-end;
-        margin-top: 10px;
+    .bottom__lorem {
+        .scroll__lorem {
+            display: none;
+        }
+        .main__bottom_lorem {
+            & > div {
+                font-size: 3vw;
+            }
+        }
     }
 }
 
-.flowers {
-    grid-area: fl;
 
-    img {
-        width: 100%;
-        height: 200px;
-    }
-}
 
-.scroll__lorem {
-    width: 100%;
-    height: 20px;
-}
 
-.main__bottom_lorem {
-    display: flex;
-    flex-wrap: wrap;
-    & > div {
-        flex-grow: 1;
-        width: 500px;
-        min-width: 420px;
-    }
-
-}
-
-footer {
-    height: 22.5vh;
-    background-image: url(../images/hills.jpg) ;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
