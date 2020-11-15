@@ -19,7 +19,7 @@
 }
 
 .content {
-    width: 1110px;
+    width: 72.27vw;
     margin: 0 auto;
 }
 
@@ -81,8 +81,7 @@ header {
     padding-bottom: 20px;
 
     .arrow_left {
-        left: 165px;
-        position: absolute;
+        margin-left: -53px;
         align-self: center;
         width: 30px;
         height: 30px;
@@ -92,14 +91,13 @@ header {
     }
     
     .arrow_right {
-        position: absolute;
         align-self: center;
         width: 30px;
         height: 30px;
         border: 1px solid #E8E8EE;
         background-color: white;
         border-radius: 3px;
-        right: 165px;
+        margin-right: -53px;
     }
 }
 
@@ -111,6 +109,9 @@ header {
     font-weight: bold;
     padding-top: 20px;
 
+    img {
+        display: none;
+    }
 
     .value__count {
         position: relative;
@@ -126,8 +127,8 @@ header {
             &::after {
                 position: absolute;
                 content: url(../images/arrow_down.png);
-                padding-left: 7px;
-                bottom: 10px;
+                margin-left: 6px;
+                margin-top: -2px;
             }
         }
     }
@@ -156,5 +157,82 @@ header {
         color: #745ACD;
         font-size: 14px;
         font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .phone {
+        overflow-x: scroll;
+
+        button {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    header {
+        form {
+            display: none;
+        }
+    }
+    
+    .phone {
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            align-self: center;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .content {
+        width: 90%;
+    }
+    
+    header {
+        form {
+            display: none;
+        }
+    }
+
+    .phone {
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            align-self: center;
+        }
+
+        .phone2 {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+    }
+
+    .menu {
+        .value__count {
+            width: 100px;
+            div {
+                display: none;
+            }
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    .products {
+        img {
+            margin: 20px auto;
+        }
     }
 }

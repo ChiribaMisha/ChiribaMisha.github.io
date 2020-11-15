@@ -27,7 +27,7 @@
 }
 
 .content {
-  width: 1110px;
+  width: 72.27vw;
   margin: 0 auto;
 }
 
@@ -106,8 +106,7 @@ header .Place_an_ad {
 }
 
 .phone .arrow_left {
-  left: 165px;
-  position: absolute;
+  margin-left: -53px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -119,7 +118,6 @@ header .Place_an_ad {
 }
 
 .phone .arrow_right {
-  position: absolute;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -128,7 +126,7 @@ header .Place_an_ad {
   border: 1px solid #E8E8EE;
   background-color: white;
   border-radius: 3px;
-  right: 165px;
+  margin-right: -53px;
 }
 
 .menu {
@@ -142,6 +140,10 @@ header .Place_an_ad {
   color: #333333;
   font-weight: bold;
   padding-top: 20px;
+}
+
+.menu img {
+  display: none;
 }
 
 .menu .value__count {
@@ -164,8 +166,8 @@ header .Place_an_ad {
 .menu .value__count span::after {
   position: absolute;
   content: url(../images/arrow_down.png);
-  padding-left: 7px;
-  bottom: 10px;
+  margin-left: 6px;
+  margin-top: -2px;
 }
 
 .products {
@@ -197,5 +199,77 @@ header .Place_an_ad {
   color: #745ACD;
   font-size: 14px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1110px) {
+  .phone {
+    overflow-x: scroll;
+  }
+  .phone button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  header form {
+    display: none;
+  }
+  .phone {
+    overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .content {
+    width: 90%;
+  }
+  header form {
+    display: none;
+  }
+  .phone {
+    overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .phone .phone2 {
+    display: none;
+  }
+  .phone button {
+    display: none;
+  }
+  .menu .value__count {
+    width: 100px;
+  }
+  .menu .value__count div {
+    display: none;
+  }
+  .menu img {
+    display: block;
+  }
+  .products img {
+    margin: 20px auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
