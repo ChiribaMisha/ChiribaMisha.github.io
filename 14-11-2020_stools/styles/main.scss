@@ -7,6 +7,7 @@
     .content {
         display: flex;
         justify-content: flex-end;
+        width: 1110px;
 
         div {
             align-self: center;
@@ -19,7 +20,8 @@
 }
 
 .content {
-    width: 72.27vw;
+    max-width: 1110px;
+    min-width: 400px;
     margin: 0 auto;
 }
 
@@ -33,7 +35,8 @@ header {
     form {
         display: flex;
         align-items: center;
-        width: 651px;
+        max-width: 651px;
+        min-width: 300px;
         height: 44px;
         border-radius: 3px;
         border: 1px solid #E8E8EE;
@@ -76,8 +79,9 @@ header {
 
 .phone {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border-bottom: 1px solid #E8E8EE;
+    overflow: auto;
     padding-bottom: 20px;
 
     .arrow_left {
@@ -116,7 +120,7 @@ header {
     .value__count {
         position: relative;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 413px;
         font-size: 18px;
         
@@ -137,7 +141,7 @@ header {
 .products {
     padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     img {
@@ -160,63 +164,26 @@ header {
     }
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 750px) {
     .phone {
-        overflow-x: scroll;
-
-        button {
-            display: none;
+        flex-wrap: wrap;
+        
+        img {
+            margin-bottom: 10px;
         }
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 500px) {
     header {
+        justify-content: space-around;
         form {
             display: none;
         }
     }
-    
-    .phone {
-        overflow: auto;
-        display: flex;
-        flex-direction: column;
-
-        img {
-            align-self: center;
-        }
+    .phone2 {
+        display: none;
     }
-}
-
-@media screen and (max-width: 540px) {
-    .content {
-        width: 90%;
-    }
-    
-    header {
-        form {
-            display: none;
-        }
-    }
-
-    .phone {
-        overflow: auto;
-        display: flex;
-        flex-direction: column;
-
-        img {
-            align-self: center;
-        }
-
-        .phone2 {
-            display: none;
-        }
-
-        button {
-            display: none;
-        }
-    }
-
     .menu {
         .value__count {
             width: 100px;
