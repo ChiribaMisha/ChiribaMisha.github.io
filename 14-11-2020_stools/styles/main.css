@@ -202,7 +202,7 @@ header .Place_an_ad {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .phone2 {
     display: none;
   }
