@@ -29,7 +29,6 @@
 
 .content {
   max-width: 1110px;
-  min-width: 400px;
   margin: 0 auto;
 }
 
@@ -104,32 +103,9 @@ header .Place_an_ad {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border-bottom: 1px solid #E8E8EE;
-  overflow: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 20px;
-}
-
-.phone .arrow_left {
-  margin-left: -53px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #E8E8EE;
-  background-color: white;
-  border-radius: 3px;
-}
-
-.phone .arrow_right {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #E8E8EE;
-  background-color: white;
-  border-radius: 3px;
-  margin-right: -53px;
 }
 
 .menu {
@@ -202,24 +178,31 @@ header .Place_an_ad {
   font-weight: bold;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1180px) {
   .phone {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .phone img {
-    margin-bottom: 10px;
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   header {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   header form {
     display: none;
   }
+  .phone {
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .phone2 {
     display: none;
   }
