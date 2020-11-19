@@ -178,11 +178,13 @@ header .Place_an_ad {
   font-weight: bold;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1080px) {
   .phone {
-    display: -ms-grid;
-    display: grid;
-    gap: 20px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .phone .phone2 {
+    display: none;
   }
 }
 
@@ -196,16 +198,11 @@ header .Place_an_ad {
     display: none;
   }
   .phone {
-    display: -ms-grid;
-    display: grid;
     gap: 20px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .phone2 {
-    display: none;
-  }
   .menu .value__count {
     width: 100px;
   }

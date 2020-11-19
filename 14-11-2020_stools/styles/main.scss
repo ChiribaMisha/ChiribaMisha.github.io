@@ -142,10 +142,13 @@ header {
         font-weight: bold;
     }
 }
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1080px) {
     .phone {
-        display: grid;
-        gap: 20px;
+        justify-content: space-around;
+
+        .phone2 {
+            display: none;
+        }
     }
 }
 @media screen and (max-width: 750px) {
@@ -156,15 +159,11 @@ header {
         }
     }
     .phone {
-        display: grid;
         gap: 20px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .phone2 {
-        display: none;
-    }
     .menu {
         .value__count {
             width: 100px;
