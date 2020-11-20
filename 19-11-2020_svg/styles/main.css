@@ -1,0 +1,18 @@
+.moon {
+  fill: white;
+  stroke: yellow;
+}
+
+.moon:hover {
+  fill: yellow;
+}
+
+.bird {
+  fill: white;
+}
+
+.bird:hover {
+  stroke: red;
+  fill: green;
+}
+/*# sourceMappingURL=main.css.map */

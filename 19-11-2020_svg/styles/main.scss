@@ -1,0 +1,17 @@
+.moon {
+    fill: white;
+    stroke: yellow;
+
+    &:hover {
+        fill: yellow;
+    }
+}
+
+.bird {
+    fill: white;
+
+    &:hover {
+        stroke: red;
+        fill: green;
+    }
+}
