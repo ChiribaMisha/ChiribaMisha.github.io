@@ -280,6 +280,7 @@ main {
 .name__crypto > div {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-left: 0.8rem;
 }
 
 .main__info {
@@ -295,7 +296,12 @@ main {
     margin-right: 3rem;
 }
 
-.value {
+/* .pool_hashrate > .value {
+    font-size: 2rem ;
+} */
+
+.main__info > div > .value  {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.3rem;
+    /* margin-top: 1.1rem; */
 }
