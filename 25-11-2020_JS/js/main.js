@@ -1,19 +1,25 @@
 let result = ' ';
-for (let i = 2; i <= 14; i++) {
-  if (i % 2 == 0) {
-    result += i + ' ';
+for (let a = 2; a <= 14; a++) {
+  if (a % 2 == 0) {
+    result += `${a} `;
   }
 }
+
+for (let b = 9991999; b <= 9992011; b++) {
+  if (b % 2) {
+    result += `${b} `;
+  }
+}
+
+
+for (let c = 10002223335; c <= 10002223350; c++) {
+  if (c % 5 == 0) {
+    result += `${c} `;
+  }
+}
+
 console.log(result);
 
-
-let result1 = ' ';
-for (let a = 33; a <= 45.2; a++) {
-  if (a % 2) {
-    result1 += a + ' ';
-  }
-}
-console.log(result1);
 
 
 
