@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Parking</title>
+</head>
+<body>
+
+  <div class="info-board">
+    <div class="current-time"></div>
+    <div class="free-spaces"></div>
+    <div class="occupied-spaces"></div>
+  </div>
+
+  <div class="main"></div>
+
+  <div class="overlay"></div>
+  <div class="modal car-in ">
+    Book your parking space:
+    <div class="recommendation">Recommended not to occupy a parking space</div>
+    <input type="time" class="from-time" value="11:11">
+    <button type="button" class="btn btn-ok">OK</button>
+    <button type="button" class="modal-close"></button>
+  </div>
+
+  <div class="modal car-out">
+    <div class="message">Do you want to vacate the parking space?</div>
+    <div class="wrapper">
+      <button type="button" class="btn btn-yes">YES</button>
+      <button type="button" class="btn btn-no">NO</button>
+      <button type="button" class="modal-close"></button>
+    </div>
+    <div class="occu-time"></div>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

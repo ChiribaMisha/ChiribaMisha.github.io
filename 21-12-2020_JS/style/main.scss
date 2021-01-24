@@ -1,0 +1,77 @@
+@keyframes right {
+  0% {
+  }
+  100% {
+    left: 600px;
+  }
+}
+
+@keyframes left {
+  0% {
+  }
+  100% {
+    left: -600px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.train {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  img {
+    position: relative;
+    width: 340px;
+    height: 280px;
+  }
+}
+
+.train-img {
+  position: relative;
+}
+
+.light {
+  position: relative;
+  width: 25px;
+  height: 35px;
+  background-color: #8c8c8c;
+  border-radius: 50%;
+  bottom: 202px;
+  left: 284px;
+}
+
+.light-on {
+  background-color: yellow;
+}
+
+.right {
+  animation: right linear 5s forwards;
+}
+
+.left {
+  animation: left linear 5s forwards;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 80px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  user-select: none;
+  cursor: pointer;
+  margin: 10px;
+}
